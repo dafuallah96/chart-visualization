@@ -1,0 +1,122 @@
+<div class="chart-custom">
+  <table>
+    <thead>
+      <tr>
+        <td>Project Type</td>
+        <td colspan="4">Basic</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Status</td>
+        <td>Closed</td>
+        <td>Force Closed</td>
+        <td>GM_Terminated</td>
+        <td>Null</td>
+      </tr>
+      <tr>
+        <td>Percentages</td>
+        <td>78/126=61.9%</td>
+        <td>23/126=18.25%</td>
+        <td>4/126=3.17%</td>
+        <td>21/126=16.67%</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h1 style="margin: 24px 0;">Project Type status percentages visualization</h1>
+  <div style="width: 400px;margin: 16px 0 32px;">
+    <canvas baseChart [data]="chartData" [labels]="chartLabel" [chartType]="chartType"
+      [options]="chartOptions"></canvas>
+  </div>
+
+  <div style="margin: 32px 0;">
+    <table>
+      <thead>
+        <tr>
+          <td>Project Type</td>
+          <td colspan="4">Detailed</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Status</td>
+          <td>Closed</td>
+          <td>Force Closed</td>
+          <td>GM_Terminated</td>
+          <td>Null</td>
+        </tr>
+        <tr>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>100%</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div style="margin: 32px 0;">
+    <h1 style="margin: 24px 0;">Table form example</h1>
+    <table>
+      <thead>
+        <tr>
+          <td>Project Name</td>
+          <td>Project Type</td>
+          <td>Status</td>
+          <td>Start Date</td>
+          <td>End Date</td>
+          <td>Pelsor Date</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>PFK ELSOR for PFK Cogen Plant Project</td>
+          <td>basic</td>
+          <td>Closed</td>
+          <td>2009-06-29</td>
+          <td>2009-07-31</td>
+          <td>2009-06-29</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div style="margin: 32px 0;">
+    <h1 style="margin: 24px 0;">Project type percentage</h1>
+
+    <table>
+      <thead>
+        <tr>
+          <td>Project Type</td>
+          <td>Occurrence</td>
+          <td>Percentage</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Basic</td>
+          <td>126</td>
+          <td>90.65</td>
+        </tr>
+        <tr>
+          <td>Detailed</td>
+          <td>13</td>
+          <td>9.35</td>
+        </tr>
+        <tr>
+          <td>Total</td>
+          <td>139</td>
+          <td>100</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div style="width: 400px;margin: 16px 0 32px;">
+    <canvas baseChart [data]="chartLastData" [labels]="chartLastLabel" [chartType]="chartType"
+      [options]="chartOptions"></canvas>
+  </div>
+
+</div>
